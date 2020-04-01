@@ -1,0 +1,68 @@
+Question 1
+
+l=eval(input())
+n=int(input())
+new=[]
+for i in l:
+  if i[0] not in mew:
+    new.append(i[0])
+dct={}
+for i in new:
+  dct[i]=[]
+for i in dct:
+  for j in l:
+    if i==j[0]:
+      dct[i].append(j[l])
+dct2={}
+r=0
+for i in range(len(dct)):
+  for j in range(i+1,len(dct)):
+    res= len(set(dct[list(dct)[i]]) & set(dct[list(dct)[j]]))/float(len(set(dct[list(dct)(i)]) | set(dct[list(dct)[j]])))*100
+    if 1!=j:
+      dct2[r]=[round(res,2),list(dct)[j],list(dct)[i]]
+      r=r+1
+a=list(dct2.values())
+for k in range(len(a)):
+  if a[k][1]>a[k][2]:
+    c=a[k][1]
+    a[k][1]=a[k][2]
+    a[k][2]=c
+
+a.sort(key = lambda a: a[0],reverse=True)
+l=[]
+for q in range(n):
+  l+=[(a[q][1],a[q][2])]
+print(l)
+
+
+
+
+
+Question 2
+
+in1 = eval(input())
+def new(in2):
+  try:
+    for i in in2:
+      if type(in2[k]) == type({}):
+        for j in b[i]:
+          b[i+j] = b[i][j]
+        b.pop(i)
+        new(in2)
+    else:
+      print(in2)
+  except RuntimeError:
+    pass
+new(in1)
+
+
+
+Question 3
+
+qstr=input()
+str=eval(input())
+n=set()
+for i in str:
+  if qstr==i[0:len(qstr)]:
+    n.add(i)
+print(n)
